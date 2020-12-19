@@ -98,7 +98,7 @@ void calc_fail(char **time, char **IP, char **ping, int line, int *flag,
           if ((strcmp(IP[i], IP[j])) == 0 && ping[j][0] == '-') {
             flag[j] = 1;
             count++;
-            printf("count = %d\n", count);
+            // printf("count = %d\n", count);
           }
           if ((strcmp(IP[i], IP[j])) == 0 && ping[j][0] != '-') {
             if (count >= N) {
